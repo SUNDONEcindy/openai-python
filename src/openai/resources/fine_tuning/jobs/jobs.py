@@ -29,13 +29,9 @@ from ...._base_client import (
     AsyncPaginator,
     make_request_options,
 )
-from ....types.fine_tuning import (
-    FineTuningJob,
-    FineTuningJobEvent,
-    job_list_params,
-    job_create_params,
-    job_list_events_params,
-)
+from ....types.fine_tuning import job_list_params, job_create_params, job_list_events_params
+from ....types.fine_tuning.fine_tuning_job import FineTuningJob
+from ....types.fine_tuning.fine_tuning_job_event import FineTuningJobEvent
 
 __all__ = ["Jobs", "AsyncJobs"]
 
@@ -85,11 +81,16 @@ class Jobs(SyncAPIResource):
 
           training_file: The ID of an uploaded file that contains training data.
 
-              See [upload file](https://platform.openai.com/docs/api-reference/files/upload)
+              See [upload file](https://platform.openai.com/docs/api-reference/files/create)
               for how to upload a file.
 
               Your dataset must be formatted as a JSONL file. Additionally, you must upload
               your file with the purpose `fine-tune`.
+
+              The contents of the file should differ depending on if the model uses the
+              [chat](https://platform.openai.com/docs/api-reference/fine-tuning/chat-input) or
+              [completions](https://platform.openai.com/docs/api-reference/fine-tuning/completions-input)
+              format.
 
               See the [fine-tuning guide](https://platform.openai.com/docs/guides/fine-tuning)
               for more details.
@@ -360,11 +361,16 @@ class AsyncJobs(AsyncAPIResource):
 
           training_file: The ID of an uploaded file that contains training data.
 
-              See [upload file](https://platform.openai.com/docs/api-reference/files/upload)
+              See [upload file](https://platform.openai.com/docs/api-reference/files/create)
               for how to upload a file.
 
               Your dataset must be formatted as a JSONL file. Additionally, you must upload
               your file with the purpose `fine-tune`.
+
+              The contents of the file should differ depending on if the model uses the
+              [chat](https://platform.openai.com/docs/api-reference/fine-tuning/chat-input) or
+              [completions](https://platform.openai.com/docs/api-reference/fine-tuning/completions-input)
+              format.
 
               See the [fine-tuning guide](https://platform.openai.com/docs/guides/fine-tuning)
               for more details.

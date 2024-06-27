@@ -39,20 +39,95 @@ class TestRuns:
             additional_messages=[
                 {
                     "role": "user",
-                    "content": "x",
-                    "file_ids": ["string"],
+                    "content": "string",
+                    "attachments": [
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                    ],
                     "metadata": {},
                 },
                 {
                     "role": "user",
-                    "content": "x",
-                    "file_ids": ["string"],
+                    "content": "string",
+                    "attachments": [
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                    ],
                     "metadata": {},
                 },
                 {
                     "role": "user",
-                    "content": "x",
-                    "file_ids": ["string"],
+                    "content": "string",
+                    "attachments": [
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                    ],
                     "metadata": {},
                 },
             ],
@@ -61,11 +136,13 @@ class TestRuns:
             max_prompt_tokens=256,
             metadata={},
             model="gpt-4-turbo",
+            parallel_tool_calls=True,
             response_format="none",
             stream=False,
             temperature=1,
             tool_choice="none",
             tools=[{"type": "code_interpreter"}, {"type": "code_interpreter"}, {"type": "code_interpreter"}],
+            top_p=1,
             truncation_strategy={
                 "type": "auto",
                 "last_messages": 1,
@@ -126,20 +203,95 @@ class TestRuns:
             additional_messages=[
                 {
                     "role": "user",
-                    "content": "x",
-                    "file_ids": ["string"],
+                    "content": "string",
+                    "attachments": [
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                    ],
                     "metadata": {},
                 },
                 {
                     "role": "user",
-                    "content": "x",
-                    "file_ids": ["string"],
+                    "content": "string",
+                    "attachments": [
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                    ],
                     "metadata": {},
                 },
                 {
                     "role": "user",
-                    "content": "x",
-                    "file_ids": ["string"],
+                    "content": "string",
+                    "attachments": [
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                    ],
                     "metadata": {},
                 },
             ],
@@ -148,10 +300,12 @@ class TestRuns:
             max_prompt_tokens=256,
             metadata={},
             model="gpt-4-turbo",
+            parallel_tool_calls=True,
             response_format="none",
             temperature=1,
             tool_choice="none",
             tools=[{"type": "code_interpreter"}, {"type": "code_interpreter"}, {"type": "code_interpreter"}],
+            top_p=1,
             truncation_strategy={
                 "type": "auto",
                 "last_messages": 1,
@@ -551,20 +705,95 @@ class TestAsyncRuns:
             additional_messages=[
                 {
                     "role": "user",
-                    "content": "x",
-                    "file_ids": ["string"],
+                    "content": "string",
+                    "attachments": [
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                    ],
                     "metadata": {},
                 },
                 {
                     "role": "user",
-                    "content": "x",
-                    "file_ids": ["string"],
+                    "content": "string",
+                    "attachments": [
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                    ],
                     "metadata": {},
                 },
                 {
                     "role": "user",
-                    "content": "x",
-                    "file_ids": ["string"],
+                    "content": "string",
+                    "attachments": [
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                    ],
                     "metadata": {},
                 },
             ],
@@ -573,11 +802,13 @@ class TestAsyncRuns:
             max_prompt_tokens=256,
             metadata={},
             model="gpt-4-turbo",
+            parallel_tool_calls=True,
             response_format="none",
             stream=False,
             temperature=1,
             tool_choice="none",
             tools=[{"type": "code_interpreter"}, {"type": "code_interpreter"}, {"type": "code_interpreter"}],
+            top_p=1,
             truncation_strategy={
                 "type": "auto",
                 "last_messages": 1,
@@ -638,20 +869,95 @@ class TestAsyncRuns:
             additional_messages=[
                 {
                     "role": "user",
-                    "content": "x",
-                    "file_ids": ["string"],
+                    "content": "string",
+                    "attachments": [
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                    ],
                     "metadata": {},
                 },
                 {
                     "role": "user",
-                    "content": "x",
-                    "file_ids": ["string"],
+                    "content": "string",
+                    "attachments": [
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                    ],
                     "metadata": {},
                 },
                 {
                     "role": "user",
-                    "content": "x",
-                    "file_ids": ["string"],
+                    "content": "string",
+                    "attachments": [
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                        {
+                            "file_id": "string",
+                            "tools": [
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                                {"type": "code_interpreter"},
+                            ],
+                        },
+                    ],
                     "metadata": {},
                 },
             ],
@@ -660,10 +966,12 @@ class TestAsyncRuns:
             max_prompt_tokens=256,
             metadata={},
             model="gpt-4-turbo",
+            parallel_tool_calls=True,
             response_format="none",
             temperature=1,
             tool_choice="none",
             tools=[{"type": "code_interpreter"}, {"type": "code_interpreter"}, {"type": "code_interpreter"}],
+            top_p=1,
             truncation_strategy={
                 "type": "auto",
                 "last_messages": 1,

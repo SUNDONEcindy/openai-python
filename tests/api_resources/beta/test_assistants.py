@@ -33,11 +33,26 @@ class TestAssistants:
         assistant = client.beta.assistants.create(
             model="gpt-4-turbo",
             description="string",
-            file_ids=["string", "string", "string"],
             instructions="string",
             metadata={},
             name="string",
+            response_format="none",
+            temperature=1,
+            tool_resources={
+                "code_interpreter": {"file_ids": ["string", "string", "string"]},
+                "file_search": {
+                    "vector_store_ids": ["string"],
+                    "vector_stores": [
+                        {
+                            "file_ids": ["string", "string", "string"],
+                            "chunking_strategy": {"type": "auto"},
+                            "metadata": {},
+                        }
+                    ],
+                },
+            },
             tools=[{"type": "code_interpreter"}, {"type": "code_interpreter"}, {"type": "code_interpreter"}],
+            top_p=1,
         )
         assert_matches_type(Assistant, assistant, path=["response"])
 
@@ -115,12 +130,18 @@ class TestAssistants:
         assistant = client.beta.assistants.update(
             "string",
             description="string",
-            file_ids=["string", "string", "string"],
             instructions="string",
             metadata={},
             model="string",
             name="string",
+            response_format="none",
+            temperature=1,
+            tool_resources={
+                "code_interpreter": {"file_ids": ["string", "string", "string"]},
+                "file_search": {"vector_store_ids": ["string"]},
+            },
             tools=[{"type": "code_interpreter"}, {"type": "code_interpreter"}, {"type": "code_interpreter"}],
+            top_p=1,
         )
         assert_matches_type(Assistant, assistant, path=["response"])
 
@@ -244,11 +265,26 @@ class TestAsyncAssistants:
         assistant = await async_client.beta.assistants.create(
             model="gpt-4-turbo",
             description="string",
-            file_ids=["string", "string", "string"],
             instructions="string",
             metadata={},
             name="string",
+            response_format="none",
+            temperature=1,
+            tool_resources={
+                "code_interpreter": {"file_ids": ["string", "string", "string"]},
+                "file_search": {
+                    "vector_store_ids": ["string"],
+                    "vector_stores": [
+                        {
+                            "file_ids": ["string", "string", "string"],
+                            "chunking_strategy": {"type": "auto"},
+                            "metadata": {},
+                        }
+                    ],
+                },
+            },
             tools=[{"type": "code_interpreter"}, {"type": "code_interpreter"}, {"type": "code_interpreter"}],
+            top_p=1,
         )
         assert_matches_type(Assistant, assistant, path=["response"])
 
@@ -326,12 +362,18 @@ class TestAsyncAssistants:
         assistant = await async_client.beta.assistants.update(
             "string",
             description="string",
-            file_ids=["string", "string", "string"],
             instructions="string",
             metadata={},
             model="string",
             name="string",
+            response_format="none",
+            temperature=1,
+            tool_resources={
+                "code_interpreter": {"file_ids": ["string", "string", "string"]},
+                "file_search": {"vector_store_ids": ["string"]},
+            },
             tools=[{"type": "code_interpreter"}, {"type": "code_interpreter"}, {"type": "code_interpreter"}],
+            top_p=1,
         )
         assert_matches_type(Assistant, assistant, path=["response"])
 
